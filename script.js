@@ -62,6 +62,22 @@ $(document).ready(function() {
                 '<h4 class="list-group-item-heading">' + name + '</h4>' +
                 '</div>');
             $.post('https://api.github.com/repos/' + config.github.org + '/' + config.github.repo + '/issues', {"title": name, body: "Service Down", assignees: ["bolyachevets"],labels: ["outage"]});
+            // Octokit.js
+            // https://github.com/octokit/core.js#readme
+            const octokit = new Octokit({
+              auth: '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'
+            })
+
+            await octokit.request('POST /repos/' + config.github.org + '/' + config.github.repo + '/issues', {
+              title: name,
+              body: 'Service DOWN',
+              assignees: [
+                'bolyachevets'
+              ],
+              labels: [
+                'outage'
+              ]
+            })
         });
     };
 

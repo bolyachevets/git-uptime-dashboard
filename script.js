@@ -2,13 +2,13 @@ $(document).ready(function() {
     var config = {
         uptimerobot: {
             api_keys: [
-                "YOUR-UPTIME-ROBOT-API-KEY-1"
+                'UPTIME_ROBOT_API_KEY_1'
             ],
             logs: 1
         },
         github: {
-            org: 'YOUR-GITHUB-USERNAME',
-            repo: 'YOUR-GITHUB-REPO'
+            org: 'bolyachevets',
+            repo: 'bolyachevets/git-uptime-dashboard.git'
         }
     };
 

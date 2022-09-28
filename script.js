@@ -8,7 +8,7 @@ $(document).ready(function() {
         },
         github: {
             org: 'bolyachevets',
-            repo: 'bolyachevets/git-uptime-dashboard.git'
+            repo: 'git-uptime-dashboard'
         }
     };
 

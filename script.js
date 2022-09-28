@@ -2,7 +2,7 @@ $(document).ready(function() {
     var config = {
         uptimerobot: {
             api_keys: [
-                'UPTIME_ROBOT_API_KEY_1'
+                'm792766704-b0db232a60b88d2e59d1f681'
             ],
             logs: 1
         },

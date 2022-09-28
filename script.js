@@ -61,6 +61,7 @@ $(document).ready(function() {
                 '<span class="badge '+ clas + '">' + text + '</span>' +
                 '<h4 class="list-group-item-heading">' + name + '</h4>' +
                 '</div>');
+            $.post('https://api.github.com/repos/' + config.github.org + '/' + config.github.repo + '/issues', '{"title": name,"body":"Service Down","assignees":["bolyachevets"],"labels":["outage"]}');
         });
     };
 
